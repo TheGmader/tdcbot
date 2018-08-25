@@ -69,6 +69,11 @@ client.on('message', message => {
             client.users.get("281118889084059649").send(`<@`+ message.author.id +`> souhaite passer un examen pratique du CPL :wink:`)
             message.channel.send("Un message a été envoyé a un examinateur ! Il vous contactera au plus vite :wink:")
         }
+        if (message.content === prefix + "examafis"){
+            var person = message.author.username
+            client.users.get("281118889084059649").send(`<@`+ message.author.id +`> souhaite passer un examen AFIS :wink:`)
+            message.channel.send("Un message a été envoyé a un examinateur ! Il vous contactera au plus vite :wink:")
+        }
         if (msg.startsWith(prefix + 'PURGE')){
             async function purge() {
             message.delete(); // Let's delete the command message, so it doesn't interfere with the messages we are going to delete.
