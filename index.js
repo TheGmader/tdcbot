@@ -16,8 +16,8 @@ client.on('message', message => {
     let cont = message.content.slice(prefix.length).split(" "); // This variable slices off the prefix, then puts the rest in an array based off the spaces
     let args = cont.slice(1); // This slices off the command in cont, only leaving the arguments.
         if (message.content === prefix + "examtheo"){
-            if (message.channel.name !== "examens-théorique-📴"){
-                message.reply("Merci d'aller dans le salon `examens-théorique-📴`")
+            if (message.channel.name !== "demande-exam-théorique-📴"){
+                message.reply("Merci d'aller dans le salon `demande-exam-théorique-📴`")
             }else{
                 var embed = new Discord.RichEmbed()
                     .setTitle("Les Examens Théorique")
@@ -28,8 +28,8 @@ client.on('message', message => {
             }
         }
         if (message.content === prefix + "exampra"){  
-            if (message.channel.name !== "examens-pratique-❗"){
-                message.reply("Merci d'aller dans le salon `examens-pratique-❗`")   
+            if (message.channel.name !== "demande-exam-pratique-❗"){
+                message.reply("Merci d'aller dans le salon `demande-exam-pratique-❗`")   
             }else{   
             var embed = new Discord.RichEmbed()
                 .setTitle("Les Examens Pratique")
