@@ -8,7 +8,7 @@ client.on('ready', function() {
     console.log("Connecté - Pret à vous servir");
 });
 
-client.login("process.env.TOKEN");
+client.login(process.env.TOKEN);
 
 client.on('message', message => {
     let msg = message.content.toUpperCase(); // This variable takes the message, and turns it all into uppercase so it isn't case sensitive.
