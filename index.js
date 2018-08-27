@@ -21,7 +21,7 @@ client.on('message', message => {
             }else{
                 var embed = new Discord.RichEmbed()
                     .setTitle("Les Examens Théorique")
-                    .setDescription("**Pour pouvoir avoir une licence et pouvoir piloter un avion il vous faut passer un examen théorique et pratique ! \n Les différents examens théorique : \n - BB Théorique : Pour le passer taper dans <#478624348815491072> : !bbexamtheo (Vous pouvez le recommencez autant de fois que vous souhaitez toutes les semaines) \n - PPL Théorique : Pour le passer taper dans #demande-exam-théorique : !pplexamtheo (Vous pouvez le recommencez autant de fois que vous souhaitez toutes les 2 semaines) \n - ATPL Théorique : Pour le passer taper dans #demande-exam-théorique : !atplexamtheo (Vous pouvez le passer tous les mois et au bout de 5 mois, tous les 2 mois !)**")
+                    .setDescription("**Pour pouvoir avoir une licence et pouvoir piloter un avion il vous faut passer un examen théorique et pratique ! \n Les différents examens théorique : \n - BB Théorique : Pour le passer taper dans <#478624348815491072> : !bbexamtheo (Vous pouvez le recommencez autant de fois que vous souhaitez toutes les semaines) \n - PPL Théorique : Pour le passer taper dans #demande-exam-théorique : !pplexamtheo (Vous pouvez le recommencez autant de fois que vous souhaitez toutes les 2 semaines)**")
                     .setThumbnail("https://image.noelshack.com/fichiers/2018/33/1/1534183656-icons8-avion-hublot-ouvert-100-1.png")
                     .setColor("0x2E64FE")
                 message.channel.send(embed);
@@ -33,7 +33,7 @@ client.on('message', message => {
             }else{   
             var embed = new Discord.RichEmbed()
                 .setTitle("Les Examens Pratique")
-                .setDescription("**Pour pouvoir avoir une licence et pouvoir piloter un avion il vous faut passer un examen théorique et pratique ! \n Les différents examens pratiques : \n - BB Pratique : Pour le passer taper dans #demande-exam-pratique : !bbexampra (il vous faut l'exam théorique pour pouvoir passer le pratique) \n - PPL Pratique : Pour le passer taper dans #demande-exam-pratique : !pplexampra (Il vous faut l'exam théorique pour pouvoir passer l'exam pratique) \n - CPL Théorique : Pour le passer taper dans #demande-exam-pratique : !cplexampra (Il vous faut l'exam théorique de l'ATPL pour le passer)**")
+                .setDescription("**Pour pouvoir avoir une licence et pouvoir piloter un avion il vous faut passer un examen théorique et pratique ! \n Les différents examens pratiques : \n - BB Pratique : Pour le passer taper dans #demande-exam-pratique : !bbexampra (il vous faut l'exam théorique pour pouvoir passer le pratique) \n - PPL Pratique : Pour le passer taper dans #demande-exam-pratique : !pplexampra (Il vous faut l'exam théorique pour pouvoir passer l'exam pratique)**")
                 .setThumbnail("https://image.noelshack.com/fichiers/2018/33/1/1534183656-icons8-avion-hublot-ouvert-100-1.png")
                 .setColor("0x2E64FE")
             message.channel.send(embed);
@@ -49,11 +49,6 @@ client.on('message', message => {
             client.users.get("281118889084059649").send(`<@`+ message.author.id +`> souhaite passer un examen théorique du PPL :wink:`)
             message.channel.send("Un message a été envoyé a un examinateur ! Il vous contactera au plus vite :wink:")
         }
-        if (message.content === prefix + "atplexamtheo"){
-            var person = message.author.username
-            client.users.get("281118889084059649").send(`<@`+ message.author.id +`> souhaite passer un examen théorique du ATPL :wink:`)
-            message.channel.send("Un message a été envoyé a un examinateur ! Il vous contactera au plus vite :wink:")
-        }
         if (message.content === prefix + "bbexampra"){
             var person = message.author.username
             client.users.get("281118889084059649").send(`<@`+ message.author.id +`> souhaite passer un examen pratique du BB :wink:`)
@@ -62,11 +57,6 @@ client.on('message', message => {
         if (message.content === prefix + "pplexampra"){
             var person = message.author.username
             client.users.get("281118889084059649").send(`<@`+ message.author.id +`> souhaite passer un examen pratique du PPL :wink:`)
-            message.channel.send("Un message a été envoyé a un examinateur ! Il vous contactera au plus vite :wink:")
-        }
-        if (message.content === prefix + "cplexampra"){
-            var person = message.author.username
-            client.users.get("281118889084059649").send(`<@`+ message.author.id +`> souhaite passer un examen pratique du CPL :wink:`)
             message.channel.send("Un message a été envoyé a un examinateur ! Il vous contactera au plus vite :wink:")
         }
         if (message.content === prefix + "examafis"){
