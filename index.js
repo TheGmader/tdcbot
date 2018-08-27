@@ -42,6 +42,7 @@ client.on('message', message => {
         if (message.content === prefix + "bbexamtheo"){
             var person = message.author.username
             client.users.get("281118889084059649").send(`<@`+ message.author.id +`> souhaite passer un examen théorique du brevet de base :wink:`)
+            client.users.get("398551995251687432").send(`<@`+ message.author.id +`> souhaite passer un examen théorique du brevet de base :wink:`)
             message.channel.send("Un message a été envoyé a un examinateur ! Il vous contactera au plus vite :wink:")
         }
         if (message.content === prefix + "pplexamtheo"){
