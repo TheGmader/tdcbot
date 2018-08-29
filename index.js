@@ -42,7 +42,7 @@ client.on('message', message => {
         if (message.content === prefix + "bbexamtheo"){
             var person = message.author.username
             client.users.get("281118889084059649").send(`<@`+ message.author.id +`> souhaite passer un examen théorique du brevet de base :wink:`)
-            client.users.get("398551995251687432").send(`<@`+ message.author.id +`> souhaite passer un examen théorique du brevet de base :wink:`)
+            client.users.get("226612789102247936").send(`<@`+ message.author.id +`> souhaite passer un examen théorique du brevet de base :wink:`)
             message.channel.send("Un message a été envoyé a un examinateur ! Il vous contactera au plus vite :wink:")
         }
         if (message.content === prefix + "pplexamtheo"){
@@ -78,7 +78,7 @@ client.on('message', message => {
             // We want to check if the argument is a number
             if (isNaN(args[0])) {
                 // Sends a message to the channel.
-                message.channel.send('Veuillez dire combiend de messages voulez vous supprimer \nUtilisation : ' + prefix + 'purge <nombre>'); //\n means new line.
+                message.channel.send('Veuillez dire combien de messages voulez vous supprimer \nUtilisation : ' + prefix + 'purge <nombre>'); //\n means new line.
                 // Cancels out of the script, so the rest doesn't run.
                 return;
             }
@@ -98,12 +98,12 @@ client.on('message', message => {
     }
 })
 client.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "arrivée-🌕").send(`Bienvenue ${member}`)
+    member.guild.channels.find("name", "arrivée-🌕").send(`La tour pour ${member}, Bonjour ;) Le discord en activté ! Rappelez connectez !`)
 
 })
 
 client.on('guildMemberRemove', member =>{
-    member.guild.channels.find("name", "departs-🌑").send(`${member} vient de partir`)
+    member.guild.channels.find("name", "departs-🌑").send(`${member}, pour la Tour, on quitte la fréquence a plus tard ;)`)
 })
 
 client.on('guildMemberAdd', member => {
