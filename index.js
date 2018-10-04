@@ -97,12 +97,12 @@ client.on('message', message => {
     }
 })
 client.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "arrivée-🌕").send(`La tour pour ${member}, Bonjour ;) Le discord en activté ! Rappelez connectez !`)
+    member.guild.channels.find("name", "arrivée-🌕").send(`La tour pour ${member}, Bonjour ;) Le discord en activité ! Rappelez connectez !`)
 
 })
 
 client.on('guildMemberRemove', member =>{
-    member.guild.channels.find("name", "departs-🌑").send(`${member}, pour la Tour, on quitte la fréquence a plus tard ;)`)
+    member.guild.channels.find("name", "departs-🌑").send(`${member}, pour la Tour, on quitte la fréquence à plus tard ;)`)
 })
 
 client.on('guildMemberAdd', member => {
